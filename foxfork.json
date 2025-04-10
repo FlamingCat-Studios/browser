@@ -1,0 +1,13 @@
+{
+  "name": "FlamingCat",
+  "vendor": "FlamingCat",
+  "appId": "com.flamingcat.browser",
+  "binaryName": "flaming-cat-browser",
+  "version": {
+    "product": "firefox-esr",
+    "version": "128.9.0esr"
+  },
+  "buildOptions": {
+    "windowsUseSymbolicLinks": false
+  }
+}
