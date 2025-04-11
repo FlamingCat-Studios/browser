@@ -1,0 +1,18 @@
+diff --git a/browser/themes/shared/browser-shared.css b/browser/themes/shared/browser-shared.css
+index 61119b7564d37e55f49dab7e6e14faafb4baa298..360a27791ebacafffcffa47e791a3cf6e5a4b9bf 100644
+--- a/browser/themes/shared/browser-shared.css
++++ b/browser/themes/shared/browser-shared.css
+@@ -26,6 +26,8 @@
+ @import url("chrome://browser/skin/customizableui/customizeMode.css");
+ @import url("chrome://browser/skin/UITour.css");
+ @import url("chrome://browser/skin/formautofill-notification.css");
++@import url("chrome://browser/skin/flamingcat/tweaks.css"); /* i put it at the bottom just in case */
++
+ 
+ @namespace html url("http://www.w3.org/1999/xhtml");
+ 
+@@ -1271,3 +1273,4 @@ shopping-sidebar {
+   width: 320px;
+   box-sizing: content-box;
+ }
++

@@ -1,0 +1,11 @@
+diff --git a/browser/themes/moz.build b/browser/themes/moz.build
+index 9856121071e5fb9705c6266ce523df71c052f327..9adab50350f8f038d27e5893050eeddfd82f070e 100644
+--- a/browser/themes/moz.build
++++ b/browser/themes/moz.build
+@@ -39,3 +39,5 @@ with Files("linux/**"):
+ 
+ with Files("windows/**"):
+     SCHEDULES.exclusive = ["windows"]
++
++DIRS += ['shared/flamingcat']
+\ No newline at end of file

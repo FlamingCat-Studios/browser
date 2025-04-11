@@ -17,7 +17,15 @@
       "brandShortName": "FlamingCat",
       "brandFullName": "FlamingCat Browser",
       "release": {
-        "displayVersion": "1.0.0"
+        "displayVersion": "1.0.0",
+        "github": {
+          "repo": "FlamingCat-Studios/browser"
+        }
+      },
+      "x86": {
+        "windowsMar": "windows.mar",
+        "macosMar": "macosIntel.mar",
+        "linuxMar": "linux.mar"
       }
     }
   }

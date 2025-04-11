@@ -1,0 +1,6 @@
+with Files('tweaks.css'):
+    BUG_COMPONENT = ('Firefox', 'Theme')
+
+FINAL_TARGET_FILES.chrome.browser.skin.classic.browser.flamingcat += [
+    'tweaks.css',
+]
