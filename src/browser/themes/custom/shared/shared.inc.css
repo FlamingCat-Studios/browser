@@ -1,0 +1,33 @@
+.tab-background {
+    border-radius: 0;
+    margin-block: 0;
+}
+
+:root:not([privatebrowsingmode], [firefoxviewhidden]) :is(toolbarbutton, toolbarpaletteitem) + #tabbrowser-tabs, :root[privatebrowsingmode]:not([firefoxviewhidden]) :is(toolbarbutton:not(#firefox-view-button), toolbarpaletteitem:not(#wrapper-firefox-view-button)) + #tabbrowser-tabs {
+    padding-inline-start: 0;
+}
+
+:root {
+    --tab-block-margin: 0px;
+    --toolbarbutton-border-radius: 0;
+    --urlbarView-row-gutter: 0px;
+}
+
+.tabbrowser-tab {
+    min-height: 38px;
+    max-height: 38px;
+    margin-top: 0px;
+}
+
+#TabsToolbar {
+    --toolbarbutton-inner-padding: 0;
+}
+
+.urlbar-input-container, #searchbar {
+  border-radius: 0px;
+}
+
+.urlbar-input-container {
+    border: 0px;
+    padding: 0;
+}

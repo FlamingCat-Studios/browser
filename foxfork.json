@@ -9,5 +9,16 @@
   },
   "buildOptions": {
     "windowsUseSymbolicLinks": false
+  },
+  "brands": {
+    "stable": {
+      "backgroundColor": "#302d2a",
+      "brandShorterName": "FlamingCat",
+      "brandShortName": "FlamingCat",
+      "brandFullName": "FlamingCat Browser",
+      "release": {
+        "displayVersion": "1.0.0"
+      }
+    }
   }
 }
