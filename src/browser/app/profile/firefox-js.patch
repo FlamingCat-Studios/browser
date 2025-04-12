@@ -1,5 +1,5 @@
 diff --git a/browser/app/profile/firefox.js b/browser/app/profile/firefox.js
-index 832388c145cfa6b22cee650f65c82e594f353d82..691cb951c76f8180ffca6d93e2a75111de015132 100644
+index 832388c145cfa6b22cee650f65c82e594f353d82..f11b26cdac2814b6e67f12689e2c1c27e1b8d7e3 100644
 --- a/browser/app/profile/firefox.js
 +++ b/browser/app/profile/firefox.js
 @@ -2380,13 +2380,16 @@ pref("browser.migrate.interactions.passwords", false);
@@ -23,7 +23,7 @@ index 832388c145cfa6b22cee650f65c82e594f353d82..691cb951c76f8180ffca6d93e2a75111
  
  // Enable Pocket button home panel for non link pages.
  pref("extensions.pocket.showHome", true);
-@@ -3098,3 +3101,13 @@ pref("toolkit.contentRelevancy.enabled", false);
+@@ -3098,3 +3101,15 @@ pref("toolkit.contentRelevancy.enabled", false);
  pref("toolkit.contentRelevancy.ingestEnabled", false);
  // Pref to enable extra logging for the content relevancy feature
  pref("toolkit.contentRelevancy.log", false);
@@ -37,4 +37,6 @@ index 832388c145cfa6b22cee650f65c82e594f353d82..691cb951c76f8180ffca6d93e2a75111
 +  'browser.newtabpage.activity-stream.section.highlights.includePocket',
 +  false
 +);
++
++pref("general.useragent.compatMode.firefox", true); // so google looks normal
 \ No newline at end of file

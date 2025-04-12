@@ -1,0 +1,13 @@
+diff --git a/browser/locales/en-US/browser/preferences/preferences.ftl b/browser/locales/en-US/browser/preferences/preferences.ftl
+index cec78329c1d26f7a9fc8190e52bdff2d6b84e135..73be549bb9442322cdb2bccc1e42158014a523ba 100644
+--- a/browser/locales/en-US/browser/preferences/preferences.ftl
++++ b/browser/locales/en-US/browser/preferences/preferences.ftl
+@@ -37,7 +37,7 @@ search-input-box2 =
+     .style = width: 15.4em
+     .placeholder = Find in Settings
+ 
+-managed-notice = Your browser is being managed by your organization.
++managed-notice = Some settings have been set by FlamingCat using policies.
+ managed-notice-info-icon =
+     .alt = Information
+ 

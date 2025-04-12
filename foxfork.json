@@ -16,6 +16,12 @@
       "id": "extension@tabliss.io",
       "amoId": "850407",
       "version": "2.6.0"
+    },
+    "ublock": {
+      "platform": "amo",
+      "amoId": "607454",
+      "version": "1.63.2",
+      "id": "uBlock0@raymondhill.net"
     }
   },
   "brands": {
