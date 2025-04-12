@@ -1,0 +1,23 @@
+diff --git a/browser/components/urlbar/UrlbarInput.sys.mjs b/browser/components/urlbar/UrlbarInput.sys.mjs
+index fb037c24e33b20b1d1bfadd3a3faf745aa85638c..5ce251e9ef98f505554ddbad448da35d25d2444a 100644
+--- a/browser/components/urlbar/UrlbarInput.sys.mjs
++++ b/browser/components/urlbar/UrlbarInput.sys.mjs
+@@ -460,6 +460,18 @@ export class UrlbarInput {
+           (!this.window.isBlankPageURL(uri.spec) ||
+             uri.schemeIs("moz-extension") ||
+             isInitialPageControlledByWebContent);
++
++        try {
++          const { WebExtensionPolicy } = Cu.getGlobalForObject(Services);
++          const policy = WebExtensionPolicy.getByURI(uri);
++
++          if (policy.id == "extension@tabliss.io") { // break the thing if the tab is tabliss
++            valid = false;
++          }
++
++        } catch (error) {
++          // do nothing lmao
++        }
+       }
+     } else if (
+       this.window.isInitialPage(value) &&

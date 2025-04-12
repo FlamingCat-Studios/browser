@@ -1,6 +1,6 @@
-
 .dotbuild/
 .foxfork/
 engine/
 firefox-*/
 node_modules/
+dist/

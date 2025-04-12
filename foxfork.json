@@ -10,6 +10,14 @@
   "buildOptions": {
     "windowsUseSymbolicLinks": false
   },
+  "addons": {
+    "tabliss": {
+      "platform": "amo",
+      "id": "extension@tabliss.io",
+      "amoId": "850407",
+      "version": "2.6.0"
+    }
+  },
   "brands": {
     "stable": {
       "backgroundColor": "#302d2a",
@@ -28,5 +36,11 @@
         "linuxMar": "linux.mar"
       }
     }
+  },
+  "license": {
+    "ignoredFiles": [
+      ".*\\.json"
+    ],
+    "licenseType": "MPL-2.0"
   }
 }

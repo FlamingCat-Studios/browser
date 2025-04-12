@@ -1,0 +1,40 @@
+diff --git a/browser/app/profile/firefox.js b/browser/app/profile/firefox.js
+index 832388c145cfa6b22cee650f65c82e594f353d82..691cb951c76f8180ffca6d93e2a75111de015132 100644
+--- a/browser/app/profile/firefox.js
++++ b/browser/app/profile/firefox.js
+@@ -2380,13 +2380,16 @@ pref("browser.migrate.interactions.passwords", false);
+ 
+ pref("browser.migrate.preferences-entrypoint.enabled", true);
+ 
+-pref("extensions.pocket.api", "api.getpocket.com");
++
+ pref("extensions.pocket.bffApi", "firefox-api-proxy.cdn.mozilla.net");
+ pref("extensions.pocket.bffRecentSaves", true);
+-pref("extensions.pocket.enabled", true);
+-pref("extensions.pocket.oAuthConsumerKey", "40249-e88c401e1b1f2242d9e441c4");
+ pref("extensions.pocket.oAuthConsumerKeyBff", "94110-6d5ff7a89d72c869766af0e0");
+-pref("extensions.pocket.site", "getpocket.com");
++
++// Taken from BetterFox user.js
++user_pref('extensions.pocket.enabled', false);
++user_pref('extensions.pocket.api', ' ');
++user_pref('extensions.pocket.oAuthConsumerKey', ' ');
++user_pref('extensions.pocket.site', ' ');
+ 
+ // Enable Pocket button home panel for non link pages.
+ pref("extensions.pocket.showHome", true);
+@@ -3098,3 +3101,13 @@ pref("toolkit.contentRelevancy.enabled", false);
+ pref("toolkit.contentRelevancy.ingestEnabled", false);
+ // Pref to enable extra logging for the content relevancy feature
+ pref("toolkit.contentRelevancy.log", false);
++
++pref("services.settings.server", "");
++
++// firefox stop barking u normie
++pref("browser.urlbar.suggest.quicksuggest", false);
++
++user_pref(
++  'browser.newtabpage.activity-stream.section.highlights.includePocket',
++  false
++);
+\ No newline at end of file
